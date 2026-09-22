@@ -1,23 +1,59 @@
 aid: aiwo
+
 name: Aiwo
-description: 'Aiwo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aiwo Limited is a science‑driven longevity hub offering advanced health screenings, personalized treatment plans, tailored supplements, and wellness therapies. Their platform combines cutting‑edge diagnostics with AI‑powered insights to help adults improve health, energy, and lifespan.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aiwo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
-- Company
-apis: []
+- Health
+- Longevity
+- Wellness
+- Diagnostics
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/aiwo-llms.txt
+- type: WellKnown
+  url: well-known/aiwo-well-known.yml
+- type: Vendors
+  url: vendors/aiwo-vendors.yml
+- type: DomainSecurity
+  url: security/aiwo-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://aiwo.com/
+- type: PrivacyPolicy
+  url: https://aiwo.com/pages/privacy-policy
+- type: TermsOfService
+  url: https://aiwo.com/pages/aiwo-terms-conditions
+- type: Blog
+  url: https://aiwo.com/blogs/blog
+
+apis: []
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
